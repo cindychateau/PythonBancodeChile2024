@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- Nos indica que usamos HTML5 -->
+<html lang="es"> <!-- Indica el idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- Caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a HTML</title>
+</head>
+<body>
+    <h1 atributos="valor">Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+
+    <p>Este es el primer párrafo de mi página web</p>
+
+    <p> <!-- Comentario Alt + Z (Envolver en campo visual) -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat aspernatur provident facere odit architecto itaque ex, fugit sunt fugiat iste dolorem tenetur saepe. Distinctio quas odit vel doloremque animi!
+    </p>
+
+    <!-- anchor, ancla. Hipervinculo Enlace -->
+    <a href="http://google.com" target="_blank" > Este es un hipervínculo </a>
+
+    <h2>Lista desordenada</h2>
+    <!-- Unordered List -->
+    <ul>
+        <!-- list item -->
+        <li>Gatos</li>
+        <li>Perros</li>
+        <li>Pájaros</li>
+        <li>Tlacuache</li>
+        <li>Venado</li>
+    </ul>
+
+    <h2>Lista ordenada</h2>
+    <!-- ordered list -->
+    <ol>
+        <li>Entrar a la sesión de zoom</li>
+        <li>Poner mucha atención en clase</li>
+        <li>Realizar las actividades core</li>
+    </ol>
+
+    <h2>Tabla</h2>
+    <table>
+        <!-- Encabezado de tabla -->
+        <thead>
+            <!-- Table row: Fila -->
+            <tr>
+                <!-- table heading: titulo negritas -->
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Columna 1.1</td>
+                <td>Columna 1.2</td>
+                <td>Columna 1.3</td>
+            </tr>
+            <tr>
+                <td>Columna 2.1</td>
+                <td>Columna 2.2</td>
+                <td>Columna 2.3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="img/1.jpg" alt="Gatito" >
+
+    <form action="#" method="post"> <!-- action="/url-enviando-info" # No va a ningun lado -->
+        <div> <!-- Caja/Contenedor -->
+            <label>Llena estos campos:</label>
+            <input type="text" name="input_texto" >
+            <input type="number" name="input_numeral" >
+            <input type="password" name="contra" >
+            <input type="date" name="fecha" >
+            <input type="email" name="correo" >
+        </div>
+        <div>
+            <label for="casado_id">Casado</label>
+            <input type="radio" id="casado_id" value="casado" name="estado_civil" >
+            <br> <!-- BR= Break o salto de línea. PARRAFOS -->
+            <label for="soltero_id">Soltero</label>
+            <input type="radio" id="soltero_id" value="soltero" name="estado_civil">
+        </div>
+        <div>
+            <input type="checkbox" name="mayor_edad" id="mayor">
+            <label for="mayor">¿Es mayor de edad?</label>
+        </div>
+        <div>
+            <select name="lenguaje">
+                <option value="py" >Python</option>
+                <option value="j" >Java</option>
+                <option value="c">C#</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="Comentario" cols="10"></textarea> <!-- cols = ancho, rows = filas -->
+        </div>
+        <div>
+            <input type="submit" value="Guardar Info">
+        </div>
+    </form>    
+
+</body>
+</html>
