@@ -1,0 +1,78 @@
+/*
+CSS - Cascade Style Sheets
+*/
+/*
+SELECTORES BÁSICOS
+
+etiqueta {
+    propiedad: valor;
+}
+
+.clase {
+    propiedad: valor;
+}
+
+#id {
+    propiedad: valor;
+}
+
+*/
+
+h2 {
+    color: blue;
+    font-size: 40px;
+}
+
+.rojo {
+    color: red;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+#parrafo_especial {
+    border: 2px solid purple; /*solid: recta*/
+    font-size: 16px;
+}
+
+#letra_verde {
+    color: green;
+}
+
+/*Jerarquía: ID, CLASES, ETIQUETAS*/
+
+.morado {
+    color: purple;
+}
+
+/*Etiqueta strong que está dentro de p*/
+p strong { 
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/*
+.rojo span
+#parrafo_especial strong
+.letra_verde #elemento
+*/
+/* Descendente directo */
+.container > p {
+    border: 1px dashed red;
+}
+
+input[type="text"] {
+    width: 350px;
+}
+
+input[type="number"] {
+    height: 100px;
+}
+
+input, textarea {
+    border: 3px solid magenta;
+}
+/*
+.rojo, #letra_verde
+.morado, #parraf_especial
+*/

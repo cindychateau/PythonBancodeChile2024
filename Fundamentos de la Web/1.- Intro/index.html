@@ -4,20 +4,40 @@
     <meta charset="UTF-8"> <!-- Caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro a HTML</title>
+    <link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
-    <h1 atributos="valor">Encabezado 1</h1>
+    <h1>Encabezado 1</h1>
     <h2>Encabezado 2</h2>
     <h3>Encabezado 3</h3>
-    <h4>Encabezado 4</h4>
+    <h4 class="rojo subrayado">Encabezado 4</h4>
     <h5>Encabezado 5</h5>
-    <h6>Encabezado 6</h6>
+    <h6 class="rojo morado">Encabezado 6</h6>
 
-    <p>Este es el primer párrafo de mi página web</p>
+    <p id="letra_verde" class="rojo">Este es el primer párrafo de mi página web</p>
 
-    <p> <!-- Comentario Alt + Z (Envolver en campo visual) -->
+    <p id="parrafo_especial"> <!-- Comentario Alt + Z (Envolver en campo visual) -->
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repellat aspernatur provident facere odit architecto itaque ex, fugit sunt fugiat iste dolorem tenetur saepe. Distinctio quas odit vel doloremque animi!
     </p>
+
+    <p>
+        Párrafo con etiqueta <strong>strong</strong>
+    </p>
+    <strong>Strong fuera de párrafo</strong>
+
+    <div class="container">
+        <p>
+            Párrafo. Elemento hijo
+        </p>
+        <div>
+            <p>
+                Párrafo. Elemento nieto
+            </p>
+        </div>
+        <p>
+            Párrafo. También es hijo
+        </p>
+    </div>
 
     <!-- anchor, ancla. Hipervinculo Enlace -->
     <a href="http://google.com" target="_blank" > Este es un hipervínculo </a>
