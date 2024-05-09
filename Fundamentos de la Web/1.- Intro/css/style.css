@@ -114,4 +114,21 @@ input, textarea {
     background-size: cover; /*cover: estirar verticalmente, contain: estirar horizontal*/
 }
 
+#modelo_caja {
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
 
+    /*Margin es el espacio entre el elemento y el resto de la página*/
+    margin: 20px; /*todos los lados tienen 20px*/
+    margin-top: 100px; /*-top, -right, -bottom, -left*/
+    margin: 50px 15px; /*ArribaAbajo IzqDer*/
+    margin: 50px 10px 100px 200px; /* arriba der abajo izq */
+    /*Padding es el espacio interno*/
+    padding: 20px;
+    padding-top: 50px;
+    padding: 100px 5px;
+
+    border: 2px solid black; /*solid dotted dashed double*/
+    /*centrar un div*/
+}
