@@ -18,6 +18,14 @@ etiqueta {
 
 */
 
+/*CSS RESET*/
+* { /* selecciona todos los elementos */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
 h2 {
     color: blue;
     font-size: 40px;
@@ -131,4 +139,36 @@ input, textarea {
 
     border: 2px solid black; /*solid dotted dashed double*/
     /*centrar un div*/
+}
+
+.inline {
+    /*Me despliega los elementos en una sola línea PERO no puedo dar tamaño*/
+    display: inline;
+}
+
+.block {
+    /*Me despliega mi elemento como bloque, NO puede haber nada en la misma línea.
+    SI puede tener un tamaño*/
+    display:block;
+    width: 200px;
+}
+
+.inline-block {
+    /*Me permite colocar los elementos en una sola línea y darles un tamaño*/
+    display: inline-block;
+    width: 300px;
+    border: 1px solid black;
+    vertical-align: top; /*top, bottom, middle*/
+}
+
+#div1 {
+    height: 150px;
+}
+
+#div2 {
+    height: 300px;
+}
+
+#div3 {
+    height: 500px;
 }
