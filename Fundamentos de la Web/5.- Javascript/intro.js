@@ -186,4 +186,85 @@ console.log(variable1+variable2);
 
 // Sigma -  Escribe código que sume todos los valores del 1 al 100 en una variable sum y, al final, console.log dé como resultado 1 + 2 + 3 + ... + 98 + 99 + 100. Deberíamos obtener 5050 al final.
 
+
 //Sigma pares e impares - Escribe código que sume los valores pares del 1 al 100 en una variable suma_pares y valores impares en una variable suma_impares. Intenta hacer UN solo bucle. % -> mod. 5%2 
+
+//sigma(5) regresar 5+4+3+2+1
+
+/* ARRAY/ARREGLO/LISTA */
+//array => Corchetes cuadrados
+var hobbies = [ "Leer", "Correr", "Cantar", "Hacer ejercicio", "Programar" ];
+
+console.log(hobbies[0]);
+
+hobbies[1] = "Caminar";
+console.log(hobbies);
+
+console.log(hobbies.length);
+
+for(let i=0; i < hobbies.length; i++) {
+    console.log(i + " - "+hobbies[i]);
+}
+
+var combinado = [
+    1.11,
+    "texto",
+    true,
+    39,
+    ["esta", "es", "otra", "lista"]
+];
+
+hobbies.push("Ver series"); //Agrega un nuevo elemento al final de la lista
+console.log(hobbies);
+
+hobbies.unshift("Nadar"); //Agrega un nuevo elemento al principio de la lista
+console.log(hobbies);
+
+hobbies.pop(); //Elimina el último elemento de nuestra lista
+
+//Arreglo bi-dimensional o Matriz
+var matriz = [
+    [1, 2, 3, 4, 5],
+    [7, 8, 9, 10, 11],
+    [12, 13, 14, 15, 16],
+    [17, 18, 19, 20, 21],
+    [22, 23, 24, 25, 26],
+];
+
+console.log(matriz[0][3]);
+matriz[0].push(6);
+console.log(matriz);
+
+/* OBJETOS */
+//objeto => llaves {}
+var estudiante = {
+    "id": 123,
+    "nombre": "Elena",
+    "apellido": "De Troya",
+    "edad": 25,
+    "hobbies": ["Leer", "Bailar", "Ver pelis"],
+    "direcciones": [
+        {
+            "calle": "Av. Sol",
+            "num": 1234,
+            "ciudad": "Monterrey",
+            "pais": "México"
+        },
+        {
+            "calle": "Primera Avenida",
+            "num": 345,
+            "ciudad": "Guadalajara",
+            "pais": "México"
+        }
+    ]
+}
+console.log(estudiante.nombre); //Puntos
+console.log(estudiante["edad"]); //corchetes
+estudiante.apellido = "De Arco";
+console.log(estudiante);
+console.log(estudiante.direcciones[1].calle); //estudiante['direcciones'][1]['calle']
+estudiante.direcciones[1].calle = "Segunda Avenida";
+
+estudiante.curso = "Fundamentos de la Web"; //Agrego la propiedad/clave y la igualo a un valor
+console.log(estudiante);
+estudiante.curso = ["Fundamentos de la Web", "Python"];
