@@ -27,9 +27,17 @@ var pokemon = [ //Arreglo
 /* PRINT all the NAMES of the pokemons that have ID greater than 99
     Imprimir todos los NOMBRES de pokemones con ID mayor a 99
 */
+for(var i=0; i<pokemon.length;i++){
+    if(pokemon[i].id>99){
+        console.log(pokemon[i].name);
+    }
+}
 
 /* PRINT the pokémon objects whose id is evenly divisible by 3
     Imprimir el OBJETO en el cual el id es divisible entre 3
+    10 / 5 = 2
+    10 % 3 = 1
+    10 % 3 == 1 -> true o false
 */
 
 /* PRINT the pokémon objects that have more than one type
