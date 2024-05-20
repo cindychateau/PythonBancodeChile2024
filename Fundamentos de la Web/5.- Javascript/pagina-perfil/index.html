@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Perfil</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
@@ -12,12 +12,20 @@
 <body>
     <div class="top">
         <div class="nav">
-            <h1 class="nav-title">Profile</h1>
+            <h1 class="nav-title" onclick="alerta()" >Profile</h1>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-                <li><button class="btn">Sign Out</button></li>
+                <li>
+                    <a href="#" onclick="cambiar_texto(this)">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="active" onclick="cambiar_texto(this)">My Profile</a>
+                </li>
+                <li>
+                    <a href="#" onclick="cambiar_texto(this)">Find Connections</a>
+                </li>
+                <li>
+                    <button class="btn" onclick="eliminar(this)" >Sign Out</button>
+                </li>
             </ul>
         </div>  
     </div>
@@ -27,7 +35,7 @@
             <div class="col-2">
                 <div class="user-card">
                     <div class="card-header">
-                        <img src="images/jane-m.jpg" alt="jane-medium-avatar" class="avatar-m">
+                        <img src="images/jane-m.jpg" alt="jane-medium-avatar" class="avatar-m" onmouseover="cambia_imagen(this)" onmouseout="regresa_imagen(this)" >
                     </div>
                     <div class="card-body">
                         <h1>Jane Doe</h1>
@@ -117,11 +125,12 @@
                         </span>
                     </div>
                     <div class="footer">
-                        <a href="#">View More</a>
+                        <a href="#" onclick="eliminar(this)" >View More</a>
                     </div>
                 </div>
             </div>  
         </div>
     </div>
+    <script src="./js/script.js" ></script>
 </body>
 </html>
