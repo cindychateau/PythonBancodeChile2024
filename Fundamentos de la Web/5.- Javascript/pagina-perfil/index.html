@@ -38,15 +38,14 @@
                         <img src="images/jane-m.jpg" alt="jane-medium-avatar" class="avatar-m" onmouseover="cambia_imagen(this)" onmouseout="regresa_imagen(this)" >
                     </div>
                     <div class="card-body">
-                        <h1>Jane Doe</h1>
-                        <h3>
-                            <img src="images/map-marker.png" alt="pin" class="icon-s"> 
+                        <h1 id="nombre">Jane Doe</h1>
+                        <h3 class="lugar bonito otraclase">
                             Seattle
                         </h3>
                         <p>Developer | Engineer | Problem Solver<br>
                         Master of shadows and the Internet!</p>
                         <p>
-                            <a href="#">
+                            <a onclick="editar_perfil()" href="#">
                                 <img src="images/gear.png" alt="gear" class="icon-s"> 
                                 edit profile
                             </a>
@@ -127,6 +126,7 @@
                     <div class="footer">
                         <a href="#" onclick="eliminar(this)" >View More</a>
                     </div>
+                    <button onclick="cambiar_mode()">Cambiar modalidad</button>
                 </div>
             </div>  
         </div>

@@ -166,3 +166,8 @@ a {
     padding: 0 10px;
     margin-right: 10px;
 }
+
+.dark-mode {
+    background-color: #000000;
+    /* color: white; */
+}
