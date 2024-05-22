@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    margin: 0 auto; /*me centra cuando tengo un width*/
+    padding: 12px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card-header button {
+    background-color: #ffd700;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-header button:hover { /*Cuando pasas el mouse sobre elemento*/
+    background-color: yellow;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+main {
+    /*Acomoda los elementos de adentro de manera horizontal*/
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
