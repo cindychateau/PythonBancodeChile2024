@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*HEADER*/
+header {
+    background-color: #339aff;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+   display: flex;
+   gap: 30px; 
+   justify-content: center;
+   list-style: none; /*Viñeta*/
+   margin: 15px 0;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+}
+
+/*MAIN*/
+main h2 {
+   text-align: center;
+   margin: 30px 0; 
+   font-weight: normal;
+}
+
+.semana {
+    display:flex;
+    gap: 15px; /*solo display flex. hueco entre elementos*/
+    justify-content:center;
+}
+
+.temp-card {
+    background-color: #f9f9f9;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px gray;
+    text-align: center;
+    width: 130px;
+    padding: 15px 0;
+}
+
+.temp-card img {
+    width: 70px;
+}
+
+.temp-card p {
+    margin: 5px 0;
+}
