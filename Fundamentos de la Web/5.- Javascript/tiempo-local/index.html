@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiempo Local</title>
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Tiempo Local</h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#" onclick="cambiar_temperatura(this)">Buenos Aires</a>
+                    <a href="#" onclick="cambiar_temperatura(this,'BuenosAires')">Buenos Aires</a>
                 </li>
                 <li>
-                    <a href="#" onclick="cambiar_temperatura(this)">Ciudad de México</a>
+                    <a href="#" onclick="cambiar_temperatura(this,'CiudadDeMexico')">Ciudad de México</a>
                 </li>
                 <li>
-                    <a href="#" onclick="cambiar_temperatura(this)">Santiago</a>
+                    <a href="#" onclick="cambiar_temperatura(this,'Santiago')">Santiago</a>
                 </li>
                 <li>
-                    <a href="#" onclick="cambiar_temperatura(this)">Sao Paulo</a>
+                    <a href="#" onclick="cambiar_temperatura(this,'SaoPaulo')">Sao Paulo</a>
                 </li>
                 <li>
-                    <a href="#" onclick="cambiar_temperatura(this)">Quito</a>
+                    <a href="#" onclick="cambiar_temperatura(this,'Quito')">Quito</a>
                 </li>
             </ul>
         </nav>
@@ -37,46 +39,48 @@
         </form>
     </header>
     <main>
-        <h2 id="titulo_ciudad" >Buenos Aires</h2>
+        <h2 id="titulo_ciudad">Buenos Aires</h2>
         <section class="semana">
             <div class="temp-card">
                 <img src="assets/some_clouds.png" alt="nublado">
                 <h3>Hoy</h3>
                 <p>Nublado</p>
-                <p>22C 15C</p>
+                <p class="temperatura_label">22C 15C</p>
             </div>
             <div class="temp-card">
                 <img src="assets/some_clouds.png" alt="nublado">
                 <h3>Mañana</h3>
                 <p>Soleado</p>
-                <p>22C 15C</p>
+                <p class="temperatura_label">22C 15C</p>
             </div>
             <div class="temp-card">
                 <img src="assets/some_clouds.png" alt="nublado">
                 <h3>Miércoles</h3>
                 <p>Soleado</p>
-                <p>22C 15C</p>
+                <p class="temperatura_label">22C 15C</p>
             </div>
             <div class="temp-card">
                 <img src="assets/some_clouds.png" alt="nublado">
                 <h3>Jueves</h3>
                 <p>Parcialmente<br> nublado</p>
-                <p>22C 15C</p>
+                <p class="temperatura_label">22C 15C</p>
             </div>
             <div class="temp-card">
                 <img src="assets/some_clouds.png" alt="nublado">
                 <h3>Viernes</h3>
                 <p>Lluvioso</p>
-                <p>22C 15C</p>
+                <p class="temperatura_label">22C 15C</p>
             </div>
         </section>
     </main>
     <footer>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dicta optio officia rem minus molestias? <a href="#">Leer más ...</a>
-            <button onclick="eliminar_cookies()" >Acepto</button>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dicta optio officia rem minus molestias? <a
+                href="#">Leer más ...</a>
+            <button onclick="eliminar_cookies()">Acepto</button>
         </p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
