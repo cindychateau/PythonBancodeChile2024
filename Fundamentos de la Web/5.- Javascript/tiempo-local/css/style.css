@@ -54,3 +54,20 @@ main h2 {
 .temp-card p {
     margin: 5px 0;
 }
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed; /*width: auto no funciona*/
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+footer button {
+    background-color: #ffd700;
+    padding: 5px;
+    margin-left: 10px;
+}
