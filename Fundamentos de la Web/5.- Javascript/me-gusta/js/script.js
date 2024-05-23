@@ -8,4 +8,7 @@ function like() {
     //.textContent -> texto
     //.innerHTML -> acepta etiquetas
     output.textContent = contador;
+
+
+    alert("Hola");
 }
