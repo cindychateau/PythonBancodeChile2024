@@ -11,14 +11,24 @@
         <h1>Tiempo Local</h1>
         <nav>
             <ul>
-                <li><a href="#">Buenos Aires</a></li>
-                <li><a href="#">Ciudad de México</a></li>
-                <li><a href="#">Santiago</a></li>
-                <li><a href="#">Sao Paulo</a></li>
-                <li><a href="#">Quito</a></li>
+                <li>
+                    <a href="#" onclick="cambiar_temperatura(this)">Buenos Aires</a>
+                </li>
+                <li>
+                    <a href="#" onclick="cambiar_temperatura(this)">Ciudad de México</a>
+                </li>
+                <li>
+                    <a href="#" onclick="cambiar_temperatura(this)">Santiago</a>
+                </li>
+                <li>
+                    <a href="#" onclick="cambiar_temperatura(this)">Sao Paulo</a>
+                </li>
+                <li>
+                    <a href="#" onclick="cambiar_temperatura(this)">Quito</a>
+                </li>
             </ul>
         </nav>
-        <form action="#"> <!-- Formulario que puede ser enviado -->
+        <form onclick="eliminar(this)" action="#"> <!-- Formulario que puede ser enviado -->
             <label>Mostrar temperatura en:</label>
             <select>
                 <option>C</option>
@@ -27,7 +37,7 @@
         </form>
     </header>
     <main>
-        <h2>Buenos Aires</h2>
+        <h2 id="titulo_ciudad" >Buenos Aires</h2>
         <section class="semana">
             <div class="temp-card">
                 <img src="assets/some_clouds.png" alt="nublado">
@@ -64,7 +74,7 @@
     <footer>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dicta optio officia rem minus molestias? <a href="#">Leer más ...</a>
-            <button>Acepto</button>
+            <button onclick="eliminar_cookies()" >Acepto</button>
         </p>
     </footer>
     <script src="js/script.js"></script>
