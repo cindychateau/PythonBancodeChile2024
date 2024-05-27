@@ -94,7 +94,19 @@ print(estudiante)
 lista_alumnos = [
     {"nombre": "Elena", "apellido": "De Troya", "id": 123, "cursos": ["Fundamentos de la Web", "Python"]},
     {"nombre": "Juana", "apellido": "De Arco", "id": 234, "cursos": ["Fundamentos de la Web", "Python", "MERN"]},
-    {"nombre": "Pedro", "apellido": "Páramo", "id": 345, "cursos": ["Fundamentos de la Web", "Python", "MERN", "Java"]}
+    {"nombre": "Pedro", 
+    "apellido": "Páramo", 
+    "id": 345, 
+    "cursos": ["Fundamentos de la Web", "Python", "MERN", "Java"]}
 ]
 
 #¿Cómo eliminamos de la lista de cursos MERN para Pedro?
+#lista_alumnos[2]["cursos"].pop(2) #elimina el indice
+lista_alumnos[2]["cursos"].remove("MERN") #elimina el valor
+print(lista_alumnos)
+'''
+Comentarios
+mas extensos
+'''
+from pprint import pprint #Importando la función pprint de la librería pprint
+pprint(lista_alumnos)
