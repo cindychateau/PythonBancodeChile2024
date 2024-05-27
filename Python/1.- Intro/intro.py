@@ -34,3 +34,67 @@ nombre = "Juana"
 apodo = "juanita"
 print(f"Hola, te presento a {nombre}, le puedes llamar '{apodo}' .") #Interpolación
 print("Hola, te presento a "+nombre+", le puedes llamar '"+apodo+"' .")
+
+#Métodos de manipulación de cadenas
+frase = "hola mundo! soy Juana de Arco y hoy es 27 de Mayo"
+print(frase.title()) #Primera letra de cada palabra esté en mayúscula
+print(frase.upper()) #Todo esté en mayúsculas
+print(frase.lower()) #Todo esté es minúsculas
+print(frase.count('oy')) #Regresa cuántos 'oy' hay en la cadena
+print(frase.find('Juana')) #Regresar el indice en el que encuentra mi palabra. Case-sensitive
+print(frase.find('juana')) #-1 es que NO existe, o no encontró esa palabra en la frase
+print(frase[-1]) #Regresa la última letra
+
+#====Estructuras de Datos====
+#TUPLAS: funciona parecido a un arreglo. NO puedo cambiar el valor
+tupla = ("Elena", "Juana", "Pedro", "Pablo")
+print(tupla[0]) #tupla[indice]
+#tupla[1] = "Juanita" #ERROR TypeError: 'tuple' object does not support item assignment
+tupla2 = ("texto", 7, False, 6.6) #Pueden tener distintos tipos de datos
+
+#LISTAS / ARRAY / ARREGLO
+lista_nombres = ["Hugo", "Paco", "Luis"]
+print(lista_nombres[2])
+lista_nombres[2] = "Donald"
+print(lista_nombres)
+lista_nombres.pop() #Elimina la última posición de mi lista
+print(lista_nombres)
+lista_nombres.pop(0) #Elimina el indice
+print(lista_nombres)
+lista_nombres.append("Mickey") #Se agrega el elemento al final de la lista
+print(lista_nombres)
+lista_nombres.insert(1, "Goofy") #Indico la posicion y el valor a agregar
+print(lista_nombres)
+
+lista_mix = ["texto", 11, True, 1.1, ["elemento1", "elemento2"]]
+matriz = [
+    [0, 1, 2, 3, 4],
+    [5, 6, 7, 8, 9]
+]
+print(matriz[1][2])
+print(lista_mix[4][1])
+
+#DICCIONARIOS (Javascript Objetos)
+estudiante = {
+    "nombre": "Juana",
+    "apellido": "De Arco",
+    "edad": 18,
+    "soltera": True,
+    "hobbies": ["leer", "comer", "salir al parque"]
+}
+
+print(estudiante["nombre"])
+estudiante["edad"] = 19
+print(estudiante)
+estudiante["estatura"] = 1.67
+print(estudiante)
+estudiante.pop("soltera") #.pop(clave) : Elimina ese par de clave-valor
+print(estudiante)
+
+lista_alumnos = [
+    {"nombre": "Elena", "apellido": "De Troya", "id": 123, "cursos": ["Fundamentos de la Web", "Python"]},
+    {"nombre": "Juana", "apellido": "De Arco", "id": 234, "cursos": ["Fundamentos de la Web", "Python", "MERN"]},
+    {"nombre": "Pedro", "apellido": "Páramo", "id": 345, "cursos": ["Fundamentos de la Web", "Python", "MERN", "Java"]}
+]
+
+#¿Cómo eliminamos de la lista de cursos MERN para Pedro?
