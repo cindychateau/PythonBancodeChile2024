@@ -139,3 +139,22 @@ while i < 7:
     i += 1
 else: #va a entrar una ronda después de que deje de cumplirse la condicional
     print("Dejo de cumplirse condicional.", i)
+
+
+#BREAK -> interrumpir por completo mi bucle
+for x in range(16):
+    if x == 13:
+        break
+    print(x)
+
+#CONTINUE -> interrupción temporal. SOLO NO ejecuta en la ronda que cumple condicional
+for x in range(16): 
+    if x == 13:
+        continue
+    print(x)
+
+#RETO INDIVIDUAL
+#Dado el for 1 al 15, imprime todos los numeros EXCEPTO aquellos múltiples de 5. break/continue
+
+#Dada una cadena, imprima cada uno de los caracteres y que se detenga POR COMPLETO si encuentra un . (PUNTO)
+cadena1 = "Hola, buenos dias. Como estas"
