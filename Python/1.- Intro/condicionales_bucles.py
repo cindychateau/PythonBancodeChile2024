@@ -96,3 +96,46 @@ for estudiante in lista_estudiantes:
     print(estudiante)
     for dato in estudiante:
         print(f"Clave: {dato}. Valor:{estudiante[dato]}")
+
+texto = "Buen dia"
+for letra in texto:
+    print(letra)
+
+inicio = 0
+final = 5
+'''
+inicio = 0
+final = 5
+imprime: inicio: 0. final: 5
+inicio = 1
+final = 3
+---
+imprime: inicio: 1. final: 3
+inicio = 2
+final = 1
+---
+'''
+while inicio < final:
+    print(f"inicio: {inicio}. final: {final}")
+    inicio += 1
+    final -= 2
+
+i = 4
+'''
+i = 4
+imprime: Entra a while 4
+i = 5
+---
+imprime: Entra a while 5
+i = 6
+---
+imprime: Entra a while 6
+i = 7
+---
+imprime: Dejo de cumplirse condicional 7
+'''
+while i < 7:
+    print("Entra a while.", i)
+    i += 1
+else: #va a entrar una ronda después de que deje de cumplirse la condicional
+    print("Dejo de cumplirse condicional.", i)
