@@ -155,6 +155,14 @@ for x in range(16):
 
 #RETO INDIVIDUAL
 #Dado el for 1 al 15, imprime todos los numeros EXCEPTO aquellos múltiples de 5. break/continue
+for x in range(16):
+    if x%5==0:
+        continue
+    print(x)
 
 #Dada una cadena, imprima cada uno de los caracteres y que se detenga POR COMPLETO si encuentra un . (PUNTO)
 cadena1 = "Hola, buenos dias. Como estas"
+for letra in cadena1:
+    print(letra)
+    if letra == ".":
+        break
