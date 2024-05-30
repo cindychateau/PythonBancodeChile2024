@@ -87,14 +87,49 @@ def sumatoria_arreglo(arr):
         suma += num
     return suma
 
+def sumatoria_arreglos(arreglo):
+    suma = sum(arreglo)
+    return suma
+
 #Función que reciba un arreglo y que regrese el número mayor del arreglo
 #Ej: [2, 4, 10] return 10
+def numMayor(arreglo):
+    return max(arreglo)
+
+def mayor(arr):
+    max = arr[0]
+    for num in arr:
+        if max < num:
+            max = num
+    return max
 
 #Función que reciba un arreglo y reciba un número y regrese True si el número se encuentra dentro del arreglo o False si NO se encuentra en el arreglo
 #Ej: [2, 4, 6], 1 return False
 #Ej: [2, 4, 6], 2 return True
+def numBoolean(arreglo, num):
+    if num in arreglo:
+        print(True)
+    else:
+        print(False)
+
+def findNumber(arreglo, num):  # Agregamos num como parámetro
+    if num in arreglo: #in es función integrada de Python
+        return True
+    else:
+        return False
 
 #Función que reciba un arreglo y reemplace cualquier número negativo por 0. Regresa el arreglo SIN números negativos. Ej. Recibes: [1,5,10,-2], Regresas [1,5,10,0]
+def noNeg(arr):
+    for i in range(len(arr)):
+        if arr[i]<0:
+            arr[i]=0
+    print(arr)
+
+def numNegativoZero(arreglo):
+    for i in range(len(arreglo)):
+        if arreglo[i] < 0:         
+            arreglo[i] = 0        
+    return arreglo 
 
 
 #SLICING: partir mi arreglo
