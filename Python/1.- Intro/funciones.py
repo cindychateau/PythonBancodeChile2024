@@ -62,3 +62,43 @@ print( resultado_multiplicacion ) #1
 print( multiplicacion(4) ) #4
 print( multiplicacion(4, 5) ) #20
 print( multiplicacion(4, "Hola") )
+
+#Función que reciba un arreglo y que regrese la suma de los valores del arreglo
+#Ej: [1, 2, 3, 4] return 10
+'''
+arr = [1, 2, 3, 4]
+suma = 0
+num = 1
+suma = 0+1 = 1
+--
+num = 2
+suma = 1 + 2 = 3
+--
+num = 3
+suma = 3 + 3 = 6
+--
+num = 4
+suma = 6 + 4 = 10
+<- 10
+'''
+def sumatoria_arreglo(arr):
+    suma = 0 #Cuantificar la suma
+    for num in arr:
+        suma += num
+    return suma
+
+#Función que reciba un arreglo y que regrese el número mayor del arreglo
+#Ej: [2, 4, 10] return 10
+
+#Función que reciba un arreglo y reciba un número y regrese True si el número se encuentra dentro del arreglo o False si NO se encuentra en el arreglo
+#Ej: [2, 4, 6], 1 return False
+#Ej: [2, 4, 6], 2 return True
+
+#Función que reciba un arreglo y reemplace cualquier número negativo por 0. Regresa el arreglo SIN números negativos. Ej. Recibes: [1,5,10,-2], Regresas [1,5,10,0]
+
+
+#SLICING: partir mi arreglo
+papeleria = ["papel", "lapiz", "libreta", "clip", "plumon", "pluma", "marcatextos"]
+print(papeleria[3:]) #3-> indice en el que quiero que comience
+print(papeleria[:4])
+print(papeleria[2:5])
