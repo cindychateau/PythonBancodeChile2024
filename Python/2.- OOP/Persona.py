@@ -81,4 +81,8 @@ class Persona:
             print("Puedes obtener tu licencia")
         else:
             print("No tienes la mayoria de edad")
+    
+    def pasear_mascota(self):
+        print("Estas paseando a tu mascota, y como se puso feliz hizo un sonido")
+        self.mascota.hacer_sonido()
 
