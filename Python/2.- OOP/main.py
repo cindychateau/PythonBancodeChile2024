@@ -15,3 +15,19 @@ juana.codificar(15)
 
 juana.codificar(100)
 print(juana.lineas_codigo)
+
+print(juana.escuela)
+print(elena.escuela)
+
+#Cambiando para toda la clase la escuela
+Persona.escuela = "Escuela de Programación"
+print(juana.escuela)
+print(elena.escuela)
+
+pedro = Persona("Pedro", "Paramo", "pedro@codingdojo.com", 32)
+
+print(len(Persona.lista_personas))
+
+Persona.imprimir_todos()
+
+pedro.licencia_conducir()

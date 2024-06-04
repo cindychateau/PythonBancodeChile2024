@@ -1,5 +1,9 @@
 class Persona:
 
+    #Atributo de Clase: es un atributo que pertenece a la clase completa y que el valor es compartido por todas las instancias
+    escuela = "Coding Dojo LATAM"
+    lista_personas = []
+
     #Método constructor: se encarga de inicializar el objeto
     '''
     self = juana
@@ -8,13 +12,17 @@ class Persona:
     email = "juana@codingdojo.com"
     edad = 22
     '''
-    def __init__(self, nombre, apellido, email, edad):
+    def __init__(self, name, last_name, e_mail, age):
         # Codigo
-        self.nombre = nombre #juana.nombre = "Juana"
-        self.apellido = apellido #juana.apellido = "De Arco"
-        self.email = email #juana.email = "juana@codingdojo.com"
+        self.nombre = name #juana.nombre = "Juana"
+        self.apellido = last_name #juana.apellido = "De Arco"
+        self.email = e_mail #juana.email = "juana@codingdojo.com"
         self.lineas_codigo = 0 #lineas de codigo que ha desarrollado
-        self.edad = edad #juana.edad = 22
+        self.edad = age #juana.edad = 22
+
+        # Cada nueva instancia se agrega a la lista de personas
+        #lista_personas = [elena, juana]
+        Persona.lista_personas.append(self)
     
     #self = elena
     def imprimir(self):
@@ -30,3 +38,43 @@ class Persona:
     #juana.lineas_codigo = 15 + 100 = 115
     def codificar(self, cantidad_lineas):
         self.lineas_codigo += cantidad_lineas
+    
+    #método de clase
+    #cls se refiere a la clase que invoca al  métodos
+    '''
+    Persona.lista_personas = [elena, juana, pedro]
+    cls = Persona
+    p = elena
+    Elena De Troya 18
+    ---
+    p = juana
+    Juana De Arco 22
+    ---
+    p = pedro
+    Pedro Paramo 32
+    '''
+    @classmethod
+    def imprimir_todos(cls): 
+        #cls = Persona
+        for p in cls.lista_personas:
+            p.imprimir()
+    
+
+    #Métodos estáticos: ayudantes/auxiliares
+    @staticmethod
+    def mayor_edad(edad):
+        #edad = 22
+        if edad < 18:
+            return False
+        else:
+            return True
+    
+
+
+    def licencia_conducir(self):
+        #mayor_edad(22)
+        if(Persona.mayor_edad(self.edad)):
+            print("Puedes obtener tu licencia")
+        else:
+            print("No tienes la mayoria de edad")
+
