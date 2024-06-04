@@ -1,3 +1,4 @@
+from Animal import Animal
 class Persona:
 
     #Atributo de Clase: es un atributo que pertenece a la clase completa y que el valor es compartido por todas las instancias
@@ -12,13 +13,16 @@ class Persona:
     email = "juana@codingdojo.com"
     edad = 22
     '''
-    def __init__(self, name, last_name, e_mail, age):
+    def __init__(self, name, last_name, e_mail, age, nombre_mascota, sonido_mascota):
         # Codigo
         self.nombre = name #juana.nombre = "Juana"
         self.apellido = last_name #juana.apellido = "De Arco"
         self.email = e_mail #juana.email = "juana@codingdojo.com"
         self.lineas_codigo = 0 #lineas de codigo que ha desarrollado
         self.edad = age #juana.edad = 22
+        #self.mascota = animalito #juana.mascota = firulais
+        self.mascota = Animal(nombre_mascota, sonido_mascota)
+
 
         # Cada nueva instancia se agrega a la lista de personas
         #lista_personas = [elena, juana]
