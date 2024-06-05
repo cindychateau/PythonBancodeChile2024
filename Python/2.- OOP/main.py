@@ -1,6 +1,8 @@
 #Importar la clase
 from Persona import Persona
 # from Animal import Animal
+from Gato import Gato
+from Perro import Perro
 
 # miu = Animal("Miusita", "miau")
 # firulais = Animal("Firulais", "guau")
@@ -39,3 +41,13 @@ Persona.imprimir_todos()
 pedro.licencia_conducir()
 
 pedro.mascota.hacer_sonido()
+
+michi = Gato("Michi", "meow", "corto")
+pluto = Perro("Pluto", "woof", "golden")
+
+michi.rascar_sofa()
+michi.hacer_sonido()
+pluto.hacer_sonido()
+pluto.perseguir_autos()
+michi.ir_al_bano()
+pluto.ir_al_bano()
