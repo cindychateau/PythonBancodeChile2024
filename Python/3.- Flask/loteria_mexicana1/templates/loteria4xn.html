@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Lotería Mexicana</h1>
+    <table>
+        {% set color_index = namespace(value=0) %}
+        <tr>
+            {% for x in range(4*filas): %}
+            {% if x%4 == 0 %}
+        </tr>
+        <tr>
+            {% endif %}
+            <td class="{{colores[color_index.value]}}">{{colores[color_index.value]}}</td>
+            {% set color_index.value = color_index.value+1 %}
+            {% if color_index.value>2 %}
+                {% set color_index.value = 0 %}
+            {% endif %}
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+
+</html>
