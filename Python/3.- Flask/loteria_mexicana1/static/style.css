@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    border:0;
+    margin:0;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    width: 80px;
+    height: 120px;
+    border: 1px solid;
+}
+
+.rosa {
+    background-color: #fcc7e6; 
+}
+
+.azul {
+    background-color: #2b84f7;
+}
+
+.amarillo {
+    background-color: #fdff00;
+}
+
+
