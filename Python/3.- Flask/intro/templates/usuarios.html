@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >
 </head>
 <body>
     <div class="container">
         <h1>¡Bienvenida {{nombre}} !</h1>
        
         {% for x in range(numero) %}
-            <h3>¡Saludos!</h3>
+            <h3 class="text-info">¡Saludos!</h3>
         {% endfor %}
 
         <ul>
@@ -25,7 +26,7 @@
                 </li>
             {% endfor %}
         </ul>
-
+        <img alt="gatito" src="{{ url_for('static', filename='img/gatito_small.jpg') }}" >
     </div>
 </body>
 </html>
