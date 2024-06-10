@@ -13,11 +13,11 @@
         <tr>
             {% for y in range(columnas) %}
                 {% if (x+y)%3 == 0 %}  
-                    <td class="rosa"></td>
+                    <td class="rosa">{{cartas[(columnas*x)+y]}}</td>
                 {% elif (x+y)%3 == 1 %}
-                    <td class="azul"></td>
+                    <td class="azul">{{cartas[(columnas*x)+y]}}</td>
                 {% else %}
-                    <td class="amarillo"></td>
+                    <td class="amarillo">{{cartas[(columnas*x)+y]}}</td>
                 {% endif %}
             {% endfor %}
         </tr>
