@@ -2,9 +2,11 @@
 #render_template (renderizar los HTML)
 #request (con el cual nosotros podemos recibir información de formularios)
 #redirect (redireccionar)
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__) #Instancia de Flask = Aplicación Web
+
+app.secret_key = "llave super secreta" #una capa extra de seguridad para las cookies
 
 #Formulario necesita 3 rutas:
 #1.- Renderiza/Muestra el formulario
@@ -23,6 +25,10 @@ def registrar():
         "email": "juana@codingdojo.com"
     }
     '''
+    #Guardar en sesión
+    session["usuario"] = request.form["nombre"]
+    session["correo"] = request.form["email"]
+
     #Renderizar = Mostrar una plantilla HTML
     #NUNCA renderizamos una plantilla cuando recibo un POST
     #En su lugar: redirigimos a otra ruta /exito
@@ -31,7 +37,17 @@ def registrar():
 #3.- Ruta a la que redirigimos
 @app.route("/exito")
 def exito():
+    #reviso que en sesión exista algo llamado usuario
+    if "usuario" not in session:
+        return redirect("/")
+    
     return render_template("exito.html")
+
+@app.route("/logout")
+def logout():
+    #Eliminar sesión
+    session.clear()
+    return redirect("/")
     
 
 

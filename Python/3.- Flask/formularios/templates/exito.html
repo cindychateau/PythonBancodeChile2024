@@ -11,6 +11,10 @@
 <body>
     <div class="container">
         <h1>¡Gracias por tu registro!</h1>
+        <h3>Bienvenid@ {{session["usuario"]}}</h3>
+        <a href="/logout" class="btn btn-danger">
+            Cerrar Sesión
+        </a>
     </div>
 </body>
 </html>
