@@ -8,6 +8,15 @@ const temperatures = {
     Quito: ["26C 15C", "27C 28C", "21C 28C", "11C 18C", "18C 15C"],
 } //ACÁ tenemos un objeto con nuestras temperaturas si?
 
+/*
+temperatures.BuenosAires = ["22C 15C", "23C 28C", "21C 23C", "14C 18C", "12C 15C"]
+
+temperatures.BuenosAires[0] = "22C 15C"
+*/
+
+
+
+
 function eliminar_cookies() {
     let pie_de_pagina = document.querySelector("footer");
     pie_de_pagina.remove(); //Elmina el elemento
@@ -28,11 +37,28 @@ function cambiar_temperatura(elemento, ciudadSelect) {
     h2_ciudad.innerText = ciudad;
 
     //SELECCIONAMOS todoo los campos de temperaturas:
-    let temperaturas = document.querySelectorAll(".temperatura_label");
+    let temperaturas = document.querySelectorAll(".temperatura_label"); //Regresa una lista con todos los que cumplen con ese querySelector
+
+    /*
+    temperaturas = [
+        <p class="temperatura_label">22C 15C</p>,
+        <p class="temperatura_label">22C 15C</p>,
+        <p class="temperatura_label">22C 15C</p>,
+        <p class="temperatura_label">22C 15C</p>,
+        <p class="temperatura_label">22C 15C</p>
+    ]
+     */
+
+
+    //ciudadSelect = BuenosAires
+
     //VAMOS A VERLAS EN CONSOLA
     console.log(temperaturas);
+
+    //la lista de temperaturas para esa ciudad
     console.log(temperatures[ciudadSelect]);//ESTO SERIA LAS TEMPERATURAS SELECCIONADAS DEL OBJETO DE TEMPERATURAS,SI?
     temperaturas.forEach((temp, indice) => {
+        //temp = <p class="temperatura_label">22C 15C</p>
         console.log(temp);
         temp.innerText = temperatures[ciudadSelect][indice];
         //Selecciona la ciudad correspondiente y lo hace indice por indice 
