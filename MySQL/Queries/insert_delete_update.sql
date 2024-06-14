@@ -11,3 +11,14 @@ DELETE FROM usuarios WHERE id = 8;
 -- UPDATE tabla SET columna1 = "valor1", columna2 = "valor2" WHERE id = x
 UPDATE usuarios SET edad = 19 WHERE id = 10;
 UPDATE usuarios SET edad = 20, nombre = "Juanita" WHERE id = 10;
+
+-- Mas de un registro en un solo insert
+INSERT INTO usuarios (nombre, edad, direccion_id) VALUES 
+("Pablo", 55, 2),
+("Mare", 21, 3),
+("Pastora", 22, 4);
+
+INSERT INTO cursos (nombre) VALUES
+("Python"),
+("Java"), 
+("Fundamentos de la Web");
