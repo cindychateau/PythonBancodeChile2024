@@ -20,6 +20,7 @@
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>E-mail</th>
+                    <th>Fecha de Creación</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -29,6 +30,7 @@
                         <td>{{ usuario.nombre }}</td>
                         <td>{{ usuario.apellido }}</td>
                         <td>{{ usuario.email }}</td>
+                        <td>{{ usuario.created_at.strftime("%d %B %y") }}</td>
                         <td>
                             <!-- Botones de editar y borrar -->
                         </td>
