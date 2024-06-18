@@ -46,3 +46,25 @@ class Usuario:
         #data = {"id": 1}
         query = "DELETE FROM usuarios WHERE id = %(id)s"
         return connectToMySQL('crud_bc').query_db(query, data)
+    
+    @classmethod
+    def mostrar_un_usuario(cls, data):
+        #data = {"id": 1}
+        query = "SELECT * FROM usuarios WHERE id = %(id)s"
+        resultado = connectToMySQL('crud_bc').query_db(query, data) #Select me regresa una lista de diccionarios
+        #resultado = [ {"id": 1, "nombre": "Elena", "apellido": "De Troya"....} ]
+        usuario = cls(resultado[0]) #creo un objeto, con la info de la BD
+        return usuario #instancia de Usuario
+    
+    @classmethod
+    def actualizar_usuario(cls, formulario):
+        '''
+        formulario= {
+            "id": 1
+            "nombre": "elenita",
+            "apellido":"de troya",
+            "email": "elenita@cd.com"
+        }
+        '''
+        query = "UPDATE usuarios SET nombre = %(nombre)s, apellido = %(apellido)s, email = %(email)s WHERE id = %(id)s"
+        return connectToMySQL('crud_bc').query_db(query, formulario)

@@ -33,6 +33,7 @@
                         <td>{{ usuario.created_at.strftime("%d %B %y") }}</td>
                         <td>
                             <a class="btn btn-danger" href="/borrar/{{usuario.id}}" >Borrar</a>
+                            <a class="btn btn-warning" href="/editar/{{usuario.id}}" >Editar</a>
                         </td>
                     </tr>
                 {% endfor %}

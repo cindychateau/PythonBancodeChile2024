@@ -23,12 +23,25 @@ def crear():
     Usuario.guardar(request.form)
     return redirect("/")
 
-@app.route("/borrar/<int:id>") #/borrar/____ 
-def borrar(id):
-    diccionario = {"id": id}
+@app.route("/borrar/<int:id>") #/borrar/2
+def borrar(id): #id = 2
+    diccionario = {"id": id} #{"id": 2}
     Usuario.eliminar(diccionario)
     return redirect("/")
 
+@app.route("/editar/<int:id>") #/editar/2
+def editar(id):
+    #Una función en Usuario que en base a un ID me regrese una instancia de Usuario
+    diccionario = {"id": id} #{"id": 2}
+    usuario = Usuario.mostrar_un_usuario(diccionario)
+    return render_template("editar.html", usuario=usuario) #enviando el objeto de Usuario a editar
+
+@app.route("/actualizar", methods=['POST'])
+def actualizar():
+    #recibimos el request.form
+    #Un método en Usuario que actulice la info de un registro enviando request.form
+    Usuario.actualizar_usuario(request.form)
+    return redirect("/")
 
 if __name__=="__main__":
     app.run(debug=True)
