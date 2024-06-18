@@ -40,3 +40,9 @@ class Usuario:
             lista_usuarios.append(usuario) #Esa instancia la agrega a la lista
         
         return lista_usuarios #lista de instancias
+    
+    @classmethod
+    def eliminar(cls, data): 
+        #data = {"id": 1}
+        query = "DELETE FROM usuarios WHERE id = %(id)s"
+        return connectToMySQL('crud_bc').query_db(query, data)

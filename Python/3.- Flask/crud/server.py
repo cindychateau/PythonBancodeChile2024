@@ -23,5 +23,12 @@ def crear():
     Usuario.guardar(request.form)
     return redirect("/")
 
+@app.route("/borrar/<int:id>") #/borrar/____ 
+def borrar(id):
+    diccionario = {"id": id}
+    Usuario.eliminar(diccionario)
+    return redirect("/")
+
+
 if __name__=="__main__":
     app.run(debug=True)

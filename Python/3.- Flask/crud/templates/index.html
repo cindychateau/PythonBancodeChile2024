@@ -32,7 +32,7 @@
                         <td>{{ usuario.email }}</td>
                         <td>{{ usuario.created_at.strftime("%d %B %y") }}</td>
                         <td>
-                            <!-- Botones de editar y borrar -->
+                            <a class="btn btn-danger" href="/borrar/{{usuario.id}}" >Borrar</a>
                         </td>
                     </tr>
                 {% endfor %}
