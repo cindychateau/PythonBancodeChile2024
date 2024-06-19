@@ -16,4 +16,7 @@ def cursos():
     return render_template("cursos.html", cursos = lista_cursos)
 
 
-@app.route("/crear/curso")
+@app.route("/crear/curso", methods=['POST'])
+def crear_curso():
+    Curso.guardar(request.form)
+    return redirect("/cursos")
