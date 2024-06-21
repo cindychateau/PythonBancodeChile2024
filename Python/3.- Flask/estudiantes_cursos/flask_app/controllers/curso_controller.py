@@ -20,3 +20,9 @@ def cursos():
 def crear_curso():
     Curso.guardar(request.form)
     return redirect("/cursos")
+
+@app.route("/curso/<int:id>")
+def estudiantes_del_curso(id):
+    data={"id": id}
+    curso_seleccionado = Curso.curso_con_estudiantes(data)
+    return render_template("curso_con_estudiantes.html", curso_seleccionado = curso_seleccionado)

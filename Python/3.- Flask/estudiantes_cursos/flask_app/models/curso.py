@@ -1,4 +1,5 @@
 from flask_app.config.mysqlconnection import connectToMySQL
+from flask_app.models.estudiante import Estudiante
 
 #PEND: Importar tambien Estudiante
 
@@ -32,3 +33,17 @@ class Curso:
         return resultado
 
     #Método que me regrese UN curso con sus estudiantes
+    @classmethod
+    def curso_con_estudiantes(cls, data):
+        #data = {"id": 2}
+        query="SELECT * FROM cursos WHERE cursos.id =%(id)s "
+        resultado = connectToMySQL('esquema_estudiantes_cursos').query_db(query,data)
+        if len(resultado)<1:
+            return False
+        curso_seleccionado = cls(resultado[0])
+        query="SELECT * FROM estudiantes WHERE curso_id=%(id)s "
+        resultado = connectToMySQL('esquema_estudiantes_cursos').query_db(query,data)
+        for estudiante in resultado:
+            curso_seleccionado.estudiantes.append(Estudiante(estudiante))
+        return curso_seleccionado
+
