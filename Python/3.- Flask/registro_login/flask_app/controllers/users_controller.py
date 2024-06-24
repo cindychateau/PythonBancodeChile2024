@@ -40,6 +40,10 @@ def register():
 
 @app.route("/dashboard")
 def dashboard():
+    #Verificar que el usuario haya iniciado sesión
+    if 'user_id' not in session:
+        return redirect("/")
+        
     return render_template("dashboard.html")
 
 @app.route("/login", methods=["POST"])
@@ -60,3 +64,8 @@ def login():
     
     session["user_id"] = user.id
     return redirect("/dashboard")
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/")
