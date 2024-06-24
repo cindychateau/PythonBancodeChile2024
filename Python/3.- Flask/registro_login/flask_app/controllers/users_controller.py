@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request, session
+from flask import Flask, render_template, redirect, request, session, flash
 from flask_app import app
 
 #Importamos los modelos
@@ -41,3 +41,22 @@ def register():
 @app.route("/dashboard")
 def dashboard():
     return render_template("dashboard.html")
+
+@app.route("/login", methods=["POST"])
+def login():
+    #request.form = {"email": "elena@codingdojo.com", "password": "Hola123"}
+    #Verifico que el email esté en mi BD
+    user = User.get_by_email(request.form) #Recibo False o recibo un objeto de Usuario
+
+    if not user: #Si user = False
+        flash("E-mail not found", "login")
+        return redirect("/")
+    
+    #Si user SI ES objeto User
+    #user = User() .id=1, .first_name="Elena", .last_name="De Troya"....... .password="$2asdansjdansdjkjasbabdans"
+    if not bcrypt.check_password_hash(user.password, request.form["password"]): #(pass_hasheado, pass_nohasheado)
+        flash("Password incorrect", "login")
+        return redirect("/")
+    
+    session["user_id"] = user.id
+    return redirect("/dashboard")

@@ -49,6 +49,27 @@
             <!-- Inicio de sesión -->
             <div class="col-6">
                 <h2>Login</h2>
+                <!-- Mensajes de error login -->
+                {% with messages = get_flashed_messages(category_filter=['login']) %}
+                    {% if messages %}
+                        <div class="alert alert-danger">
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+                <form action="/login" method="post">
+                    <div>
+                        <label>E-mail:</label>
+                        <input type="email" class="form-control" name="email" >
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" class="form-control" name="password" >
+                    </div>
+                    <input type="submit" value="Login" class="btn btn-primary mt-3" >
+                </form>
             </div>
         </div>
     </div>
