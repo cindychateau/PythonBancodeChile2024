@@ -40,10 +40,13 @@
         {% for post in posts %}
             <div class="card mt-3">
                 <div class="card-body">
-                    <h3>{{post.user_name}} - {{post.created_at}}</h3>
+                    <h3>{{post.user_name}} - {{post.created_at.strftime("%d %B, %Y")}}</h3>
                     <p>
                         {{post.content}}
                     </p>
+                    {% if session["user_id"] == post.user_id %}
+                        <a class="btn btn-danger" href="/delete_post/{{post.id}}">Borrar</a>
+                    {% endif %}
                 </div>
             </div>
         {% endfor %}

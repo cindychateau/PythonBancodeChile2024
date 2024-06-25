@@ -33,10 +33,16 @@ class Post:
     
     @classmethod
     def get_all(cls):
-        query = "SELECT posts.*, users.first_name as user_name FROM posts JOIN users ON posts.user_id = users.id;"
+        query = "SELECT posts.*, users.first_name as user_name FROM posts JOIN users ON posts.user_id = users.id ORDER BY created_at DESC;"
         results = connectToMySQL("foro_publicaciones").query_db(query) #results = Lista de diccionarios
         posts = []
         for p in results:
             #p = {"id": 1, "content": "Hola"....., "user_name": "Elena"}
             posts.append(cls(p)) #1.- cls(post): Genera el objeto de publicacion con el diccionario. 2.- .append agrega el objeto a la lista de posts
         return posts
+    
+    @classmethod
+    def delete(cls, data): #(cls, post_id)
+        #data = {"id": 2} -> data = {"id": post_id}
+        query = "DELETE FROM posts WHERE id = %(id)s"
+        connectToMySQL("foro_publicaciones").query_db(query, data)

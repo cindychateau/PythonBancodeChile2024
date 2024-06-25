@@ -12,3 +12,12 @@ def create_post():
     
     Post.save(request.form)
     return redirect("/dashboard")
+
+@app.route("/delete_post/<int:id>")
+def delete_post(id):
+    #Método que borrar un registro en base a su ID
+    dicc = {"id": id}
+    Post.delete(dicc)
+
+    #Post.delete(id)
+    return redirect("/dashboard")
