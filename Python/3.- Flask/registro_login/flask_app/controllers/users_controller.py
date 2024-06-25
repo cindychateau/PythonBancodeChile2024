@@ -43,8 +43,11 @@ def dashboard():
     #Verificar que el usuario haya iniciado sesión
     if 'user_id' not in session:
         return redirect("/")
-        
-    return render_template("dashboard.html")
+
+    dicc = {"id": session['user_id']}
+    user = User.get_by_id(dicc) #Obtener el objeto User
+
+    return render_template("dashboard.html", user=user)
 
 @app.route("/login", methods=["POST"])
 def login():

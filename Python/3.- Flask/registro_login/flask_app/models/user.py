@@ -30,6 +30,9 @@ class User:
         #form = {"email": "elena@cd.com", "password": "hola123"}
         query = "SELECT * FROM users WHERE email = %(email)s"
         result = connectToMySQL("loginreg_bc").query_db(query, form) #Regresa Lista de Diccionarios
+
+        #result = [] No existe. tamaño = 0
+        #result = [ {"id": 1, "first_name": "Elena", "last_name": "De Troya".....} ]
         
         if len(result) < 1: #Revisa que mi lista esté vacía
             return False
@@ -79,4 +82,12 @@ class User:
             is_valid = False
         
         return is_valid
+    
+    @classmethod
+    def get_by_id(cls, data):
+        #data = {"id": 1}
+        query = "SELECT * FROM users WHERE id = %(id)s"
+        result = connectToMySQL('loginreg_bc').query_db(query, data) #Lista de 1 diccionario -> indice 0
+        user = cls(result[0])
+        return user
 
