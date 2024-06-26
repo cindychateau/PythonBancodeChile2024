@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register and Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- REGISTRO -->
+            <div class="col-6">
+                <h2>Register</h2>
+                <!-- Mensajes de error "register" -->
+                {% with messages = get_flashed_messages(category_filter=['register']) %}
+                    {% if messages %}
+                        <div class="alert alert-danger">
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+                <form action="/register" method="post" >
+                    <div>
+                        <label><span class="text-danger">*</span> First Name:</label>
+                        <input class="form-control" name="first_name" >
+                    </div>
+                    <div>
+                        <label>Last Name:</label>
+                        <input class="form-control" name="last_name" >
+                    </div>
+                    <div>
+                        <label>E-mail:</label>
+                        <input class="form-control" name="email" >
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" class="form-control" name="password" >
+                    </div>
+                    <div>
+                        <label>Confirm Password:</label>
+                        <input type="password" class="form-control" name="confirm" >
+                    </div>
+                    <input type="submit" class="btn btn-info mt-3" value="Register" >
+                </form>
+            </div>
+            <!-- Inicio de sesión -->
+            <div class="col-6">
+                <h2>Login</h2>
+                <!-- Mensajes de error login -->
+                {% with messages = get_flashed_messages(category_filter=['login']) %}
+                    {% if messages %}
+                        <div class="alert alert-danger">
+                            {% for message in messages %}
+                                <p>{{message}}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+                <form action="/login" method="post">
+                    <div>
+                        <label>E-mail:</label>
+                        <input type="email" class="form-control" name="email" >
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" class="form-control" name="password" >
+                    </div>
+                    <input type="submit" value="Login" class="btn btn-primary mt-3" >
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
