@@ -40,7 +40,7 @@
                     </div>
                     <div>
                         <label>Detalles:</label>
-                        <textarea class="form-control" name="details" ></textarea>
+                        <textarea class="form-control" name="details" >{{session["details"]}}</textarea>
                     </div>
                     <input type="hidden" name="user_id" value="{{session['user_id']}}" >
                     <input type="submit" class="btn btn-success mt-3" value="Guardar" >

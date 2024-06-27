@@ -1,3 +1,11 @@
+#BONUS**
+#<3 Orden de Dashboard sea en base a fecha asc
+#<3 Que en dashboard no aparezcan eventos en el pasado
+#<3 Validar que el evento sea en el futuro
+#<3 Almacenara detalle en algún lado, para si hay errores no volverlo a escribir
+#<3 Al editar, hacer un double check de que la persona de sesión sea el creador del evento
+#Revisar que el nombre del evento sea único -> Validemos edición cambiará un poco
+
 from flask import Flask, render_template, redirect, request, session, flash
 from flask_app import app
 
@@ -24,10 +32,14 @@ def create():
     if 'user_id' not in session:
         return redirect("/")
     
+    #Guardamos en sesión, por si hay error que no se pierda esta info
+    session["details"] = request.form["details"]
+
     if not Event.validate_event(request.form):
         return redirect("/nuevo")
     
     Event.create(request.form)
+    session.pop("details") #Quitamos detalles de sesión, para que en un nuevo evento no aparezcan
     return redirect("/dashboard")
 
 @app.route("/ver/<int:id>") #/ver/1
@@ -60,7 +72,9 @@ def edit(id):
     dicc = {"id": id} #{"id": 1}
     event = Event.read_one(dicc) #Invoco de la clase Event a read_one, enviamos el diccionario y recibimos un objeto Events
 
-    #PEND: revisar que si sea el usuario en sesión el que creó el evento
+    #Revisar que si sea el usuario en sesión el que creó el evento
+    if session['user_id'] != event.user_id:
+        return redirect("/dashboard")
     
     return render_template("edit.html", event=event)
 

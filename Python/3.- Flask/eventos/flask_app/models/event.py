@@ -2,6 +2,8 @@ from flask_app.config.mysqlconnection import connectToMySQL #Importacion de la c
 
 from flask import flash #flash es el encargado de mostrar los mensajes
 
+from datetime import datetime #Manipular las fechas
+
 class Event:
 
     def __init__(self, data):
@@ -37,7 +39,9 @@ class Event:
 
     @classmethod
     def read_all(cls):
-        query = "SELECT events.*, users.first_name as user_name FROM events JOIN users ON events.user_id = users.id;"
+        #WHERE date >= CURDATE() -> Solo eventos de hoy y del futuro
+        #ORDER BY date ASC -> Ordena los eventos de maner asc
+        query = "SELECT events.*, users.first_name as user_name FROM events JOIN users ON events.user_id = users.id WHERE date >= CURDATE() ORDER BY date ASC;"
         results = connectToMySQL("events_bc").query_db(query) #Lista de Diccionarios
         events = []
         for ev in results:
@@ -64,8 +68,13 @@ class Event:
         if form["date"] == "":
             flash("Ingrese una fecha", "evento")
             is_valid = False
-        
-        #Pend Bonus: Fecha fuera en el futuro
+        else:
+            #Validar que la fecha sea en el futuro
+            fecha_obj = datetime.strptime(form["date"], '%Y-%m-%d') #Creando una fecha en base al string que recibo del form
+            hoy = datetime.now()
+            if hoy > fecha_obj:
+                flash('La fecha no puede ser en el pasado', 'evento')
+                is_valid = False
 
         return is_valid #True o False
 
