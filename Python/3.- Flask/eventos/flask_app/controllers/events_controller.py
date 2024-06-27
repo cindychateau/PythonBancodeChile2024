@@ -25,3 +25,14 @@ def create():
     
     Event.create(request.form)
     return redirect("/dashboard")
+
+@app.route("/ver/<int:id>") #/ver/1
+def read(id): #id = 1
+    #Verificar que el usuario haya iniciado sesión
+    if 'user_id' not in session:
+        return redirect("/")
+    
+    dicc = {"id": id} #{"id": 1}
+    event = Event.read_one(dicc) #Invoco de la clase Event a read_one, enviamos el diccionario y recibimos un objeto Events
+
+    return render_template("view.html", event=event)

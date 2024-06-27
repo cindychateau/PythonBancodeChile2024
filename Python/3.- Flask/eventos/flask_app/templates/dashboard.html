@@ -32,7 +32,11 @@
                             <td>{{event.date}}</td>
                             <td>{{event.user_name}}</td>
                             <td>
-                                <!-- Pendientes las acciones: ver, borrar y editar -->
+                                <a class="btn btn-warning" href="/ver/{{event.id}}" >Ver</a>
+                                {% if session['user_id'] == event.user_id %}
+                                    <a class="btn btn-primary" href="/editar/{{event.id}}">Editar</a>
+                                    <a class="btn btn-danger" href="/borrar/{{event.id}}" >Borrar</a>
+                                {% endif %}
                             </td>
                         </tr>
                     {% endfor %}

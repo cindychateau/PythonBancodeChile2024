@@ -72,3 +72,8 @@ class Event:
     #update
 
     #delete
+    @classmethod
+    def delete(cls, data):
+        #data = {"id": 1}
+        query = "DELETE FROM events WHERE id = %(id)s"
+        return connectToMySQL("events_bc").query_db(query, data)
