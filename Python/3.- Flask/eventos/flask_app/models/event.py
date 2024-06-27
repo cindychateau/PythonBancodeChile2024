@@ -70,6 +70,11 @@ class Event:
         return is_valid #True o False
 
     #update
+    @classmethod
+    def update(cls, form):
+        #form = {la informacion que se envió en el formulario}
+        query = "UPDATE events SET name=%(name)s, location=%(location)s, date=%(date)s, details=%(details)s, user_id=%(user_id)s WHERE id=%(id)s"
+        return connectToMySQL("events_bc").query_db(query, form)
 
     #delete
     @classmethod
