@@ -56,6 +56,20 @@ class Event:
         if len(form["name"]) < 3:
             flash("El nombre del evento debe tener al menos 3 caracteres", "evento") #(mensaje, categoria)
             is_valid = False
+        
+        #Validar que el nombre del evento sea único
+        else:
+            query=""
+            if "id" not in form:
+                query = "SELECT * FROM events WHERE name = %(name)s AND id != 0"
+            else:
+                query = "SELECT * FROM events WHERE name = %(name)s AND id != %(id)s"
+            result = connectToMySQL("events_bc").query_db(query, form) #Lista de eventos
+            #Lista vacía, Lista con 1 diccionario
+            if len(result) >= 1:
+                #SI existe ese nombre de evento en mi BD
+                flash(f"Un evento con el nombre '{form["name"]}' ya fué creado", "evento")
+                is_valid = False
 
         if len(form["location"]) < 3:
             flash("La ubicación del evento debe tener al menos 3 caracteres", "evento") #(mensaje, categoria)

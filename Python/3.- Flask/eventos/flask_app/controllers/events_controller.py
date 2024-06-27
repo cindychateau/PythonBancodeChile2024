@@ -32,14 +32,16 @@ def create():
     if 'user_id' not in session:
         return redirect("/")
     
-    #Guardamos en sesión, por si hay error que no se pierda esta info
-    session["details"] = request.form["details"]
-
+    
     if not Event.validate_event(request.form):
+        #Guardamos en flash, por si hay error que no se pierda esta info
+        flash(request.form["name"], "evento_name")
+        flash(request.form["location"], "evento_location")
+        flash(request.form["date"], "evento_date")
+        flash(request.form["details"], "evento_details")
         return redirect("/nuevo")
     
     Event.create(request.form)
-    session.pop("details") #Quitamos detalles de sesión, para que en un nuevo evento no aparezcan
     return redirect("/dashboard")
 
 @app.route("/ver/<int:id>") #/ver/1
