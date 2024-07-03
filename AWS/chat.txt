@@ -1,0 +1,418 @@
+07:25:06	 From Javiera Kammle : Reacted to "naci listaaaa" with 😂
+07:27:37	 From Cammie Gonzalez Guerra : Buenos días, profe recién pude conectarme
+07:28:19	 From Paulimar Pérez : Buenos días, profe igualmente yo recién pude conectarme
+07:28:39	 From Constanza Calvio : como análisis de la web  ???
+07:29:17	 From Cynthia Castillo - Coding Dojo : https://aws.amazon.com/
+07:29:41	 From Constanza Calvio : jajajajajajajaj
+07:32:12	 From Javiera Kammle : yo tendré que hacer lo mismo ajajaja
+07:33:39	 From Cynthia Castillo - Coding Dojo : rm -rf .git
+07:35:20	 From Cynthia Castillo - Coding Dojo : pipenv requirements > requirements.txt
+07:35:33	 From isa : Hola profe, mil disculpas, recién me conecto.
+07:36:09	 From isa : Qué bueno, gracias profe
+07:36:35	 From isa : Súper, gracias
+07:36:42	 From Karla Ramirez : si
+07:36:44	 From Francisca Paredes : sii
+07:36:46	 From Oriana Chirino : yes
+07:37:55	 From Cynthia Castillo - Coding Dojo : .gitignore
+07:37:58	 From Lissette Peña : hola profe vengo llegando
+07:38:25	 From Cynthia Castillo - Coding Dojo : https://www.toptal.com/developers/gitignore
+07:39:14	 From Cynthia Castillo - Coding Dojo : https://www.toptal.com/developers/gitignore/api/flask
+07:40:47	 From Génesis Adriana Delgado : ¿Qué otra cosa se podría ignorar?
+07:42:01	 From Fran Leal : profe disculpe, me atrasé un poco. Como puso el gitignore en la carpeta del proyecto?
+07:42:27	 From Fran Leal : aah ya, muchas gracias
+07:43:44	 From Génesis Adriana Delgado : sip
+07:43:45	 From Fanny Herrera : siii
+07:43:46	 From Alejandra muñoz : si
+07:43:47	 From Karla Ramirez : si
+07:43:47	 From Constanza Calvio : sii
+07:46:49	 From Javiera Kammle : que nombre era el repo?
+07:47:13	 From Valentina Barrera : Es público o privado?
+07:47:18	 From Constanza Calvio : es necesario ponerle la contraseña para poder desplegar nuestro proyecto entonces?
+07:47:19	 From Valentina Barrera : Me quedé un poco atrás jaja
+07:47:38	 From Constanza Calvio : super gracias profe
+07:48:09	 From Valentina Barrera : Gracias profe
+07:48:48	 From Génesis Adriana Delgado : sippp
+07:48:49	 From Constanza Calvio : super
+07:48:51	 From Isabel Urrutia : siii
+07:51:03	 From Constanza Calvio : profe pero yo podría usar git bash desde  vsc también ?
+07:51:23	 From Francisca Paredes : si yo rstoy desde vs
+07:51:43	 From Javiera Kammle : yo estoy usando la misma cmd en el visual e igual me toma los comandos
+07:51:45	 From Valentina Barrera : Profe y nosotras que tenemos Mac qué hacemos, desde el terminal?
+07:52:09	 From Valentina Barrera : Ah oki, thanks you
+07:52:41	 From Cynthia Castillo - Coding Dojo : git init
+07:53:09	 From Cynthia Castillo - Coding Dojo : git add .
+07:55:03	 From Karla Ramirez : como estará viene sto?
+07:55:17	 From Génesis Adriana Delgado : Ok, profe
+07:55:43	 From Cammie Gonzalez Guerra : Me pasa lo mismo que Génesis
+07:56:22	 From Javiera Kammle : en la carpeta, clic derecho, mostrar más opciones
+07:56:34	 From Constanza Calvio : ahiii
+08:01:58	 From Isabel Urrutia : profe, me aparecieron 2 warning al hacer el add, todo ok? warning: in the working copy of 'Pipfile', LF will be replaced by CRLF the next time Git touches itwarning: in the working copy of 'Pipfile.lock', LF will be replaced by CRLF the next time Git touches it
+08:02:30	 From Karla Ramirez : a mi me salió esto:
+08:02:47	 From Javiera Kammle : es por el gitignore
+08:03:37	 From Mareva Mardones : siii
+08:03:40	 From Constanza Calvio : sip
+08:04:47	 From Liz García : profe nos avisa nosotras q hacemos jeje
+08:05:33	 From Cynthia Castillo - Coding Dojo : Replying to "profe nos avisa noso..."
+
+Sisi, todos estos pasitos te los saltas ntp
+08:05:55	 From Liz García : Reacted to "Sisi, todos estos pa..." with 🥰
+08:07:35	 From Constanza Calvio : profe puede mandare el ultimo comando
+08:07:38	 From Constanza Calvio : mandar *
+08:07:39	 From Fran Leal : perfect
+08:07:39	 From Karla Ramirez : si
+08:07:44	 From Isabel Urrutia : siii todo ok
+08:08:33	 From Viviana Molina  To  Cynthia Castillo - Coding Dojo(privately) : Hola profe, disculpe el atraso
+ Me quedé dormida, anoche me acosté muy tarde. Luego veré el video
+08:08:44	 From Cynthia Castillo - Coding Dojo  To  Viviana Molina(privately) : Replying to "Hola profe, disculpe..."
+
+Ntp Vivi
+08:09:37	 From Constanza Calvio : profe ya vuelvoo le dare comida al zoo
+08:11:08	 From Fran Leal : Reacted to "profe ya vuelvoo le ..." with 💚
+08:12:33	 From Fran Leal : sip
+08:12:33	 From Mareva Mardones : suii
+08:12:45	 From Javiera Kammle : me pidió la tarjeta ahora xdd
+08:13:02	 From Cynthia Castillo - Coding Dojo : Reacted to "me pidió la tarjeta ..." with 😳
+08:14:34	 From Mareva Mardones : y que es eso?
+08:20:43	 From Javiera Kammle : no me deja hacer nada, no me acepta ninguna tarjeta
+08:21:29	 From Javiera Kammle : lo probé con una de prepago y una de débito normal
+08:22:16	 From Cynthia Castillo - Coding Dojo : Replying to "lo probé con una de ..."
+
+Puedes intentar con alguna de crédito?
+08:24:20	 From Valentina Barrera : profe
+08:26:47	 From Mareva Mardones : siii
+08:26:49	 From Fanny Herrera : siiii
+08:26:51	 From Oriana Chirino : sip
+08:26:52	 From Isabel Urrutia : siii
+08:26:54	 From Valentina Barrera : Sip
+08:26:56	 From Javiera Kammle : profe que apretó para llegar a eso?
+08:27:00	 From Javiera Kammle : es que estoy anotando
+08:28:29	 From Constanza Calvio : siii mi cafecito
+08:28:31	 From Oriana Chirino : siii breakcitooo
+08:29:22	 From Isabel Urrutia : siii
+08:29:23	 From Karla Ramirez : profe la sesión no caduca después de mucho tiempo de inactividad?
+08:29:35	 From Karla Ramirez : pregunto porque como iremos a break...
+08:29:52	 From Karla Ramirez : oki
+08:29:54	 From Isabel Urrutia : cuanto el break?
+08:47:55	 From Cammie Gonzalez Guerra : Una AMI es una plantilla que contiene la configuración de software (sistema operativo, servidor de aplicaciones y aplicaciones) necesaria para lanzar la instancia. Busque o examine las AMI si no ve lo que busca a continuación.    Es una plantilla previamente configurada, es elegir el sistema operativo en base a una plantilla :)
+08:48:39	 From Constanza Calvio : Reacted to "Una AMI es una plant..." with ❤️
+08:49:07	 From Cynthia Castillo - Coding Dojo : Reacted to "Una AMI es una plant..." with ❤️
+08:49:13	 From Oriana Chirino : Reacted to "Una AMI es una plant..." with ❤️
+08:52:50	 From Karla Ramirez : profe deberíamos tener un solo archivo .pem?
+08:52:55	 From Karla Ramirez : porque a ud le aparecen dos
+08:52:59	 From Karla Ramirez : oki
+08:55:34	 From Karla Ramirez : si
+08:55:35	 From Fran Leal : sip
+08:55:36	 From Valentina Barrera : Profe
+08:55:37	 From Constanza Calvio : sii
+08:55:50	 From Valentina Barrera : Cuál era el siguiente comando después de ingresar a carpeta AWS?
+08:56:51	 From Oriana Chirino : me dice commnad not found
+08:58:53	 From Constanza Calvio : si ahora si veo jajajajajja
+08:59:10	 From Constanza Calvio : primero pegamos las llaves y luego pongoo yes?
+08:59:17	 From Cynthia Castillo - Coding Dojo : Replying to "primero pegamos las ..."
+
+Si!
+08:59:21	 From Constanza Calvio : Reacted to "Si!" with ❤️
+08:59:40	 From Mareva Mardones : tamos bien
+09:00:01	 From Cynthia Castillo - Coding Dojo : sudo apt-get update
+09:01:10	 From Cynthia Castillo - Coding Dojo : sudo apt-get install python3-pip nginx git -y
+09:01:51	 From Karla Ramirez : si
+09:02:03	 From Cynthia Castillo - Coding Dojo : sudo apt-get update
+09:02:28	 From Fanny Herrera : siii
+09:02:29	 From Génesis Adriana Delgado : done
+09:02:42	 From Constanza Calvio : todo good
+09:02:59	 From Javiera Kammle : yo voy bien, porque sólo estoy anotando ajajajaj
+09:03:01	 From Cynthia Castillo - Coding Dojo : sudo apt-get install python3-venv
+09:03:19	 From Mareva Mardones : profe y si no tengo instalado flask ni python, no van estos pasos ciertos?
+09:06:01	 From Cynthia Castillo - Coding Dojo : sudo apt-get install mysql-server
+09:06:31	 From Génesis Adriana Delgado : Me siento como en Matrix
+09:06:40	 From Karla Ramirez : jajajh
+09:06:41	 From Constanza Calvio : 🤣
+09:06:48	 From Oriana Chirino : 😎
+09:06:53	 From Constanza Calvio : yo soy morfeos
+09:06:55	 From Constanza Calvio : jajajajajaaj
+09:06:59	 From Constanza Calvio : me encanta ese personaje
+09:07:12	 From Cynthia Castillo - Coding Dojo : sudo apt-get update
+09:08:23	 From Génesis Adriana Delgado : ok
+09:08:30	 From Cynthia Castillo - Coding Dojo : sudo mysql -uroot -p
+09:09:13	 From Génesis Adriana Delgado : Menos mal lo dijo, jeje
+09:10:30	 From Cynthia Castillo - Coding Dojo : ALTER USER 'root'@'localhost' IDENTIFIED with mysql_native_password BY 'root';
+09:11:23	 From Cynthia Castillo - Coding Dojo : FLUSH PRIVILEGES;
+09:11:41	 From Constanza Calvio : suena como limpiar jsjjs
+09:11:51	 From Constanza Calvio : a super superr
+09:12:19	 From Isabel Urrutia : que escribió para salir?
+09:12:20	 From Constanza Calvio : todo Good
+09:12:23	 From Constanza Calvio : quit
+09:12:31	 From Karla Ramirez : que raro hacer querys desde la terminal no tenia idea que se podía
+09:12:42	 From Constanza Calvio : super freak jsjsjs
+09:13:11	 From Cynthia Castillo - Coding Dojo : sudo mysql_secure_installation
+09:14:41	 From Karla Ramirez : ups, me salió otra cosa
+09:15:32	 From Constanza Calvio : en nuestra defensa fueron muchos no y si jsjsjsjsj
+09:15:35	 From Constanza Calvio : 🤣
+09:16:31	 From Javiera Kammle : no se salió
+09:16:47	 From Javiera Kammle : con ;
+09:16:50	 From Javiera Kammle : al final
+09:21:18	 From Liz García : chicas pueden enviar todos los comentarios q la profe estaba haciendo en el visual por fis
+09:23:01	 From Liz García : por fis
+09:23:03	 From Liz García : :(
+09:23:13	 From Génesis Adriana Delgado : Profe, debo desconectarme. Tengo reunión ahora. Después veré la grabación. 🙁
+09:24:35	 From Liz García : profe puede mandarme por favor todos los comentarios q llevamos hasta ahora
+09:24:37	 From Liz García : por fis
+09:24:49	 From Cynthia Castillo - Coding Dojo : -Abrir el proyecto que queremos subir
+-Crear el archivo requirements.txt (pipenv requirements > requirements.txt)
+-Crear .gitignore (https://www.toptal.com/developers/gitignore/api/flask)
+-Crear repositorio remoto y conectarlo con el proyecto
+-Generamos la instancia
+    *Lanzar instancia
+    *Ubuntu 22.04
+    *t2.micro
+    *Generamos el par de claves
+    *Grupo de seguridad: SSH elegimos nuestra IP, Tráfico HTTP y HTTPS desde Internet
+    *Lanzar instancia
+-Cambiar los permisos de las claves
+-Conectarnos al servidor con SSH
+-sudo apt-get update
+-sudo apt-get install python3-pip nginx git -y
+-sudo apt-get update
+-sudo apt-get install python3-venv
+-sudo apt-get install mysql-server
+-sudo apt-get update
+-sudo mysql -uroot -p
+-ALTER USER 'root'@'localhost' IDENTIFIED with mysql_native_password BY 'root';
+-FLUSH PRIVILEGES;
+-quit
+-sudo mysql_secure_installation
+09:25:38	 From Cynthia Castillo - Coding Dojo : mysql -uroot -p
+09:29:32	 From Alejandra muñoz : todo bien
+09:29:35	 From Constanza Calvio : es show databases; ?
+09:29:38	 From Liz García : está peludo jiji
+09:29:42	 From Constanza Calvio : super
+09:29:45	 From Constanza Calvio : Reacted to "está peludo jiji" with 🤣
+09:29:51	 From Liz García : Reacted to "está peludo jiji" with 🤣
+09:29:54	 From Liz García : Removed a 🤣 reaction from "está peludo jiji"
+09:29:56	 From Karla Ramirez : no memuestra
+09:30:04	 From Oriana Chirino : recuerden el ;
+09:30:15	 From Oriana Chirino : punto y coma
+09:31:54	 From Cynthia Castillo - Coding Dojo : https://github.com/cindychateau/deploy_flask.git
+09:32:34	 From Oriana Chirino : sería el que sale arribita a la derecha?
+09:32:41	 From Fran Leal : ls?
+09:32:42	 From Cynthia Castillo - Coding Dojo : Replying to "{8386AA26-CD80-46AF-9003-9FDAEBA83BFB}.png"
+
+siiii!
+09:32:57	 From Valentina Barrera : Profe clonamos en https?
+09:33:00	 From Valentina Barrera : O ssh?
+09:33:28	 From Fran Leal : cd
+09:33:32	 From Constanza Calvio : cd}
+09:34:21	 From Cony Briguez Cartagena : sip
+09:34:24	 From Alejandra muñoz : si
+09:34:27	 From Constanza Calvio : sip
+09:35:49	 From Oriana Chirino : se me cayó zoom 🙁
+09:36:06	 From Oriana Chirino : me quedé en cd deploy_falsk
+09:36:39	 From Cynthia Castillo - Coding Dojo : Replying to "me quedé en cd deplo..."
+
+Ahí nos quedamos
+09:36:41	 From Javiera Kammle : tranqui ori
+09:36:49	 From Oriana Chirino : supeer
+09:37:33	 From Cynthia Castillo - Coding Dojo : python3 -m venv venv
+09:37:59	 From Karla Ramirez : en window es asi? python -m venv venv
+09:38:03	 From Valentina Barrera : Activarlo
+09:38:05	 From Constanza Calvio : Shell ?
+09:38:16	 From Valentina Barrera : Ya voy en el paso 32 jajaj
+09:38:18	 From Cynthia Castillo - Coding Dojo : source venv/bin/activate
+09:38:38	 From Javiera Kammle : Replying to "en window es asi? py..."
+
+es que estás ocupando Ubuntu ahora
+09:38:52	 From Karla Ramirez : aah si
+09:39:20	 From Karla Ramirez : Reacted to "es que estás ocupand..." with 👌
+09:39:20	 From Cynthia Castillo - Coding Dojo : pip3 install -r requirements.txt
+09:40:11	 From Cynthia Castillo - Coding Dojo : pip3 install gunicorn==19.6.0
+09:40:30	 From Javiera Kammle : eso para qué era?
+09:42:17	 From Cammie Gonzalez Guerra : Profe me acaban de citar a reunión para un trabajo, vere la grabación despues
+09:42:20	 From Cammie Gonzalez Guerra : muchas gracias :)
+09:42:36	 From Cynthia Castillo - Coding Dojo : sudo vim wsgi.py
+09:43:16	 From Cynthia Castillo - Coding Dojo : from server import app as application
+if __name__ == "__main__":
+    application.run()
+09:44:36	 From Javiera Kammle : esc y q ?
+09:44:40	 From Isabel Urrutia : al final escribió : ???
+09:44:43	 From Cynthia Castillo - Coding Dojo : :wq
+09:44:52	 From Javiera Kammle : aah
+09:44:53	 From Isabel Urrutia : enter?
+09:45:12	 From Valentina Barrera : Que nervios jajaj
+09:45:22	 From Cynthia Castillo - Coding Dojo : gunicorn --bind 0.0.0.0:5000 wsgi:application
+09:46:12	 From Karla Ramirez : me salió esto: ModuleNotFoundError: No module named 'gunicorn.six.moves'
+09:46:34	 From Cony Briguez Cartagena : Me aparece lo mismo de Karla
+09:47:19	 From Cony Briguez Cartagena : Profe elegí el 22 🙁
+09:47:27	 From Oriana Chirino : profe, no alcancé a identificar lo que debía salir
+09:47:32	 From Karla Ramirez : si profe elegi el 22
+09:52:17	 From Cynthia Castillo - Coding Dojo : pip3 install gunicorn==19.6.0
+09:52:38	 From Cynthia Castillo - Coding Dojo : sudo vim wsgi.py
+09:53:10	 From Cynthia Castillo - Coding Dojo : gunicorn --bind 0.0.0.0:5000 wsgi:application
+09:58:57	 From Cynthia Castillo - Coding Dojo : sudo vim /etc/systemd/system/gunicorn.service
+09:59:11	 From Cynthia Castillo - Coding Dojo : [Unit]
+Description=Gunicorn instance
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/{{repo name}}
+Environment="PATH=/home/ubuntu/{{repo name}}/venv/bin"
+ExecStart=/home/ubuntu/{{repo name}}/venv/bin/gunicorn --workers 3 --bind unix:{{project}}.sock -m 007 wsgi:application
+[Install]
+WantedBy=multi-user.target
+10:01:41	 From Constanza Calvio : denuevo profe
+10:01:54	 From Cynthia Castillo - Coding Dojo : sudo vim /etc/systemd/system/gunicorn.service
+10:02:11	 From Cynthia Castillo - Coding Dojo : [Unit]
+Description=Gunicorn instance
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/{{repo name}}
+Environment="PATH=/home/ubuntu/{{repo name}}/venv/bin"
+ExecStart=/home/ubuntu/{{repo name}}/venv/bin/gunicorn --workers 3 --bind unix:{{project}}.sock -m 007 wsgi:application
+[Install]
+WantedBy=multi-user.target
+10:02:38	 From Constanza Calvio : oki
+10:03:10	 From Valentina Barrera : foro_publicaciones
+10:03:18	 From Valentina Barrera : Ese colocó en project
+10:03:25	 From Karla Ramirez : cuando vemos la grabación de la clase, no podemos ver el chat cierto?
+10:03:28	 From Fran Leal : Reacted to "foro_publicaciones" with 💚
+10:03:32	 From Valentina Barrera : No Karla :/
+10:03:36	 From Fran Leal : Replying to "cuando vemos la grab..."
+
+cierto :c
+10:03:46	 From Karla Ramirez : ooh, pucha 🥹
+10:04:25	 From Constanza Calvio : la profe tendrá todo anotado después e igual en discord tengo todo el procedimiento con lujo y detalle xd
+10:05:11	 From Karla Ramirez : yaa gracias profe!
+10:05:21	 From Karla Ramirez : Reacted to "la profe tendrá todo..." with 👌
+10:07:03	 From Cynthia Castillo - Coding Dojo : sudo systemctl start gunicorn
+10:07:17	 From Cynthia Castillo - Coding Dojo : sudo systemctl enable gunicorn
+10:09:38	 From Cynthia Castillo - Coding Dojo : sudo vim /etc/systemd/system/gunicorn.service
+10:12:29	 From Isabel Urrutia : profe me salió así, parece que no igual a usted
+10:12:52	 From Alejandra muñoz : Profesora me tendré que retirar, le envío un correo. gracias por la clase
+10:12:59	 From Cynthia Castillo - Coding Dojo : sudo systemctl daemon-reload
+10:14:43	 From Isabel Urrutia : Replying to "{09E07071-E65E-4294-B827-02F66F6F1C3D}.png"
+
+es igual a lo de lis
+10:15:48	 From Karla Ramirez : profe una consulta, para empezar a hacer todo de nuevo tengo que eliminar algo primero?
+10:17:30	 From Javiera Kammle : Replying to "sudo systemctl daemo..."
+
+para qué es este comando? es que fui a abrir la puerta
+10:20:25	 From Mareva Mardones : mas pasos x.x
+10:24:21	 From Cynthia Castillo - Coding Dojo : sudo systemctl daemon-reload
+10:26:42	 From Cynthia Castillo - Coding Dojo : sudo vim /etc/nginx/sites-available/{{project}}
+10:27:27	 From Cynthia Castillo - Coding Dojo : server {
+    listen 80;
+    server_name {{your public ip}};
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/{{repo name}}/{{project}}.sock;
+    }
+}
+10:31:10	 From Cynthia Castillo - Coding Dojo : sudo ln -s /etc/nginx/sites-available/{{project}} /etc/nginx/sites-enabled
+10:32:34	 From Cynthia Castillo - Coding Dojo : sudo nginx -t
+10:32:44	 From Constanza Calvio : aww
+10:33:10	 From Valentina Barrera : Bien
+10:33:12	 From Javiera Kammle : Replying to "sudo ln -s /etc/ngin..."
+
+esto era para copiar cierto?
+10:33:13	 From Constanza Calvio : estoy impaktada jsjsjs
+10:33:17	 From Constanza Calvio : pero bien jajajajja
+10:33:22	 From Valentina Barrera : Voy en el paso 50
+10:33:23	 From Valentina Barrera : .-.
+10:33:26	 From Constanza Calvio : Reacted to "Voy en el paso 50" with 🤣
+10:33:28	 From Oriana Chirino : Reacted to "Voy en el paso 50" with 🤣
+10:33:37	 From Cynthia Castillo - Coding Dojo : sudo rm /etc/nginx/sites-enabled/default
+10:33:51	 From Cynthia Castillo - Coding Dojo : sudo service nginx restart
+10:34:06	 From Cynthia Castillo - Coding Dojo : sudo chmod 755 /home/ubuntu
+10:34:21	 From Constanza Calvio : que cooolll
+10:34:24	 From Constanza Calvio : mande el linkk
+10:34:27	 From Mareva Mardones : magiaaa
+10:34:28	 From Constanza Calvio : para ver jajajaj
+10:34:28	 From Oriana Chirino : 🤩
+10:34:32	 From Cynthia Castillo - Coding Dojo : http://3.129.12.223/
+10:34:44	 From Constanza Calvio : si funcionaaa jajajaja que cool
+10:35:00	 From Constanza Calvio : ❤️
+10:35:09	 From Karla Ramirez : y ahora yo podría ver lo que ud subió?
+10:35:52	 From Constanza Calvio : yo cree un usuario jajaja
+10:36:05	 From Oriana Chirino : :(
+10:36:07	 From Constanza Calvio : ahii toy yoooo
+10:36:09	 From Constanza Calvio : JJAJAJJAJA
+10:36:12	 From Constanza Calvio : 🤣
+10:36:39	 From Karla Ramirez : no sé como entrar ahi
+10:40:31	 From Javiera Kammle : yo le puse nombre y apellido, pero sólo sale el nombre, meh
+10:41:07	 From Constanza Calvio : profe inicie sesión jsjsjs
+10:41:44	 From Cynthia Castillo - Coding Dojo : sudo chmod 755 /home/ubuntu
+10:42:34	 From Cynthia Castillo - Coding Dojo : sudo less /var/log/nginx/error.log
+10:42:52	 From Mareva Mardones : profe y como se hace si quiero ponerle foro.com por ejemplo?
+10:43:22	 From Javiera Kammle : Replying to "profe y como se hace..."
+
+eso se llama dominio, por lo general se paga
+10:43:30	 From Constanza Calvio : liss la isa encontró una solución a tu problemaa
+10:44:18	 From Fanny Herrera : Replying to "profe y como se hace..."
+
+si y ahi la ip la convierte a un nombre que seria foro.com
+10:44:40	 From Constanza Calvio : sudo systemctl start gunicorn
+10:44:41	 From Constanza Calvio : esaa
+10:44:45	 From Fanny Herrera : Replying to "profe y como se hace..."
+
+en nic.cl se pueden comprar los dominios .cl
+10:45:13	 From Constanza Calvio : Replying to " sudo systemctl star..."
+
+sii esa es después jsjs
+10:45:26	 From Cynthia Castillo - Coding Dojo : sudo vim /etc/systemd/system/gunicorn.service
+10:45:43	 From Isabel Urrutia : hizo sudo systemctl stop gunicorn y luego lo mismo pero con start
+10:45:53	 From Constanza Calvio : no me baneen porfa JSJSJS
+10:46:29	 From Mareva Mardones : Reacted to "no me baneen porfa J..." with 😂
+10:47:00	 From Liz García : Replying to "hizo sudo systemctl ..."
+
+luego cómo reviso si me funcionó?
+10:47:07	 From Cynthia Castillo - Coding Dojo : sudo systemctl stop gunicorn
+10:47:22	 From Cynthia Castillo - Coding Dojo : sudo systemctl start gunicorn
+10:47:32	 From Cynthia Castillo - Coding Dojo : sudo systemctl enable gunicorn
+10:47:33	 From Constanza Calvio : Replying to "hizo sudo systemctl ..."
+
+con start lo mismo pero en vez de stop , es con start
+10:47:51	 From Constanza Calvio : Replying to "hizo sudo systemctl ..."
+
+ahí mando la profee los comandoos
+10:48:11	 From Cynthia Castillo - Coding Dojo : sudo service nginx restart
+10:49:33	 From Fanny Herrera : Profe nos va a alcanzar a enseñar como eliminar la instancia de aws?
+10:50:02	 From Fanny Herrera : Para que no nos cobren jajaja
+10:50:36	 From Cynthia Castillo - Coding Dojo : sudo vim /etc/systemd/system/gunicorn.service
+10:50:36	 From Fran Leal : profe me tengo que retirar, nos vemos mañana c:
+10:51:18	 From Cynthia Castillo - Coding Dojo : sudo systemctl stop gunicorn
+10:51:48	 From Cynthia Castillo - Coding Dojo : sudo systemctl start gunicorn
+10:52:48	 From Cynthia Castillo - Coding Dojo : sudo systemctl enable gunicorn
+10:55:27	 From Javiera Kammle : dónde era la opción para que no cobre?
+10:55:34	 From Javiera Kammle : me distraje por un segundo
+10:55:48	 From Isabel Urrutia : ahí donde esta, eliminar instancia
+10:55:56	 From Fanny Herrera : Replying to "dónde era la opción ..."
+
+En la pagina de instancias, seleccionar tu instancia, click derecho y terminar instancia
+10:56:30	 From Javiera Kammle : o sea hay que estar monitoreando para ver cuándo me cobre
+10:59:02	 From Cynthia Castillo - Coding Dojo : sudo service nginx restart
+10:59:03	 From Javiera Kammle : profe sabe cómo se agrega un dominio a la instancia?
+10:59:13	 From Karla Ramirez : aaah ósea que uno puede seguir mejorando el proyecto web después de haberlo subido al sevidor de aws?
+10:59:17	 From Karla Ramirez : yo pensaba qe no se podía
+10:59:36	 From Javiera Kammle : no hay nada fácil con amazon
+10:59:39	 From Cynthia Castillo - Coding Dojo : https://www.analyticsvidhya.com/blog/2024/04/ml-using-flask-on-aws-gunicorn-nginx/
+10:59:39	 From Javiera Kammle : al parecer
+10:59:42	 From Constanza Calvio : Reacted to "no hay nada fácil co..." with 🤣
+11:00:04	 From Karla Ramirez : osea yo pensaba que lo podia subir sol cuando ya estaba segura que está 100% listo y con todas sus funciones revisadas.
+11:00:09	 From Liz García : chicas después cuando ya me aparecía foro_publicaciones q comandos seguían?
+11:00:10	 From Isabel Urrutia : Replying to "no hay nada fácil co..."
+
+comprar productos :)
+11:00:35	 From Cammie Gonzalez Guerra : Reacted to "comprar productos :)" with 😂
+11:00:39	 From Javiera Kammle : Reacted to "comprar productos :)" with 😂
+11:00:53	 From Constanza Calvio : profe sale que mañana tenemos como una clase con banco de chile, o parte desde la prox semana ?
+11:00:54	 From Javiera Kammle : Replying to "no hay nada fácil co..."
+
+mejor especifico: amazon web services
+11:01:19	 From Constanza Calvio : Reacted to "comprar productos :)" with 🤣
+11:01:22	 From Constanza Calvio : Reacted to "mejor especifico: am..." with ❤️
+11:01:49	 From Constanza Calvio : aa yayayay
+11:01:58	 From Constanza Calvio : claro claro
+11:02:00	 From Constanza Calvio : super
+11:02:04	 From Constanza Calvio : gracias profe
