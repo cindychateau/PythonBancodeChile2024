@@ -1,0 +1,80 @@
+-Abrir el proyecto que queremos subir
+-Crear el archivo requirements.txt (pipenv requirements > requirements.txt)
+-Crear .gitignore (https://www.toptal.com/developers/gitignore/api/flask)
+-Crear repositorio remoto y conectarlo con el proyecto
+-Generamos la instancia
+    *Lanzar instancia
+    *Ubuntu 22.04
+    *t2.micro
+    *Generamos el par de claves
+    *Grupo de seguridad: SSH elegimos nuestra IP, Tráfico HTTP y HTTPS desde Internet
+    *Lanzar instancia
+
+-Cambiar los permisos de las claves
+-Conectarnos al servidor con SSH
+-sudo apt-get update
+-sudo apt-get install python3-pip nginx git -y
+-sudo apt-get update
+-sudo apt-get install python3-venv
+-sudo apt-get install mysql-server
+-sudo apt-get update
+-sudo mysql -uroot -p
+-ALTER USER 'root'@'localhost' IDENTIFIED with mysql_native_password BY 'root';
+-FLUSH PRIVILEGES;
+-quit
+-sudo mysql_secure_installation
+-2 no, 3 Y
+-mysql -uroot -p
+-Copiar y pegar el script.sql
+-git clone {{ url copied from github project }}
+-cd {{ repo_name }}
+-python3 -m venv venv
+-source venv/bin/activate
+-pip3 install -r requirements.txt
+-pip3 install gunicorn==19.6.0
+-sudo vim wsgi.py 
+-i
+from server import app as application
+if __name__ == "__main__":
+    application.run()
+
+esc :wq
+
+-gunicorn --bind 0.0.0.0:5000 wsgi:application
+-Ctrl + C
+-deactivate
+-sudo vim /etc/systemd/system/gunicorn.service
+-i
+[Unit]
+Description=Gunicorn instance
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/{{repo name}}
+Environment="PATH=/home/ubuntu/{{repo name}}/venv/bin"
+ExecStart=/home/ubuntu/{{repo name}}/venv/bin/gunicorn --workers 3 --bind unix:{{project}}.sock -m 007 wsgi:application
+[Install]
+WantedBy=multi-user.target
+
+-sudo systemctl start gunicorn
+-sudo systemctl enable gunicorn
+-ls (debe aparecer un .sock)
+
+-sudo vim /etc/nginx/sites-available/{{project}}
+
+server {
+    listen 80;
+    server_name {{your public ip}};
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/{{repo name}}/{{project}}.sock;
+    }
+}
+
+-sudo ln -s /etc/nginx/sites-available/{{project}} /etc/nginx/sites-enabled
+-sudo nginx -t
+
+-sudo rm /etc/nginx/sites-enabled/default
+-sudo service nginx restart
+-sudo chmod 755 /home/ubuntu
